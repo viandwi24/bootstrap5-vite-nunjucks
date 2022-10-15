@@ -1,8 +1,45 @@
 {% extends "src/layouts/default.html" %}
 
 {% block content %}
-  <div class="container py-4 px-3 mx-auto">
-    <h1>Hello, Bootstrap and Vite!</h1>
-    <button class="btn btn-primary">Primary button</button>
+<!-- section::home -->
+<section class="page-section page-section-home pt-4 position-relative overflow-hidden d-flex">
+  <div class="page-section-home-canvas-wrapper">
+    <canvas id="page-section-home-canvas"></canvas>
   </div>
+  <div class="container py-4 px-4 mx-auto d-flex flex-column justify-content-center flex-1">
+    <div class="wrapper-with-tag">
+      <div class="container-with-tag">
+        <div class="mb-4">
+          <div class="text-primary font-mono">Hi, my name is</div>
+        </div>
+        <div class="display-4 fw-bolder mb-4">
+          <div class="text-custom-1">Alfian Dwi Nugraha.</div>
+          <div class="text-custom-2">A website engraver for artists.</div>
+        </div>
+        <div class="text-sm fw-light mb-4 w-50">
+          I am a web developer, who can handle web design, server side web, web games, and some desktop
+          programming. now focusing on the web front end.
+        </div>
+        <div class="mb-4 d-flex space-x-4 font-mono">
+          <button class="btn btn-primary">
+            <i class="bi-play-fill"></i>
+            <span>Lets Close About Me</span>
+          </button>
+          <button class="btn btn-dark">
+            <i class="bi-github"></i>
+            <span>Github</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<div class="social-media-bar position-fixed bottom-0 left-0 mx-4 d-flex flex-column space-y-2">
+  <a href="#" class="icon"><i class="bi-github"></i></a>
+  <a href="#" class="icon"><i class="bi-facebook"></i></a>
+  <a href="#" class="icon"><i class="bi-instagram"></i></a>
+</div>
+<div class="social-media-bar position-fixed bottom-0 right-0 mx-4 d-flex flex-column space-y-2">
+  <a href="#" class="text-vertical fw-lighter font-mono">viandwicyber@gmail.com</a>
+</div>
 {% endblock %}

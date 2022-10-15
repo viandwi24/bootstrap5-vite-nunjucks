@@ -1,0 +1,12 @@
+{
+  "redirects": [
+    {
+      "source": "/",
+      "destination": "/html/index.html",
+      "statusCode": 301
+    }
+  ],
+  "buildCommand": "pnpm build",
+  "outputDirectory": "dist",
+  "public": true
+}

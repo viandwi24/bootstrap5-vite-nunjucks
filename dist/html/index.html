@@ -1,20 +1,117 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>VIANDWI24 - Alfian Dwi Nugraha</title>
-  <script type="module" crossorigin src="/assets/main.1c99685a.js"></script>
-  <link rel="stylesheet" href="/assets/main.05d03605.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VIANDWI24 - Alfian Dwi Nugraha</title>
+  <script type="module" crossorigin src="/assets/main.aa559a6b.js"></script>
+  <link rel="stylesheet" href="/assets/main.30a15abf.css">
 </head>
+
 <body>
-    
-  <div class="container py-4 px-3 mx-auto">
-    <h1>Hello, Bootstrap and Vite!</h1>
-    <button class="btn btn-primary">Primary button</button>
+  <!-- loader -->
+  <div class="loader-wrapper">
+    <div class="lds-ripple"><div></div><div></div></div>
   </div>
 
-    
+  <!-- navbar -->
+  <nav class="navbar navbar-expand-lg fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="/html/index.html">
+        <svg width="27.71" height="32" viewBox="0 0 167 192" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M69.8874 125V117.448L82.3034 98.376C83.2421 96.968 84.1168 95.6027 84.9274 94.28C85.7808 92.9573 86.4634 91.6133 86.9754 90.248C87.5301 88.8827 87.8074 87.4533 87.8074 85.96C87.8074 84.4667 87.5088 83.3573 86.9114 82.632C86.3141 81.9067 85.5034 81.544 84.4794 81.544C83.3274 81.544 82.4314 81.864 81.7914 82.504C81.1514 83.144 80.7034 83.9973 80.4474 85.064C80.2341 86.1307 80.1274 87.3253 80.1274 88.648V91.208H69.7594V88.456C69.7594 85.384 70.2501 82.6533 71.2314 80.264C72.2128 77.832 73.7701 75.9333 75.9034 74.568C78.0368 73.16 80.8314 72.456 84.2874 72.456C88.9381 72.456 92.4368 73.672 94.7834 76.104C97.1728 78.4933 98.3674 81.8427 98.3674 86.152C98.3674 88.2427 98.0261 90.184 97.3434 91.976C96.7034 93.768 95.8288 95.5173 94.7194 97.224C93.6528 98.888 92.5008 100.637 91.2634 102.472L81.7914 116.616H96.9594V125H69.8874Z" />
+          <path d="M44.3279 125L34.9839 73.16H44.7759L50.3439 108.36L55.5279 73.16H65.8959L56.4239 125H44.3279Z" />
+          <path fill-rule="evenodd" clip-rule="evenodd"
+            d="M116.674 113.352V125H126.658V113.352H131.458V105.416H126.658V73.16H114.242L100.738 105.48V113.352H116.674ZM116.674 105.416H108.866L116.674 83.848V105.416Z" />
+          <path fill-rule="evenodd" clip-rule="evenodd"
+            d="M83.1384 0L166.277 48V144L83.1384 192L0 144V48L83.1384 0ZM10 53.7735L83.1384 11.547L156.277 53.7735V138.227L83.1384 180.453L10 138.227V53.7735Z" />
+        </svg>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar"
+        aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbar">
+        <ul class="navbar-nav font-mono mx-auto">
+          <li>
+            <a class="dropdown-item" href="/html/about.html">
+              <span>01.</span>
+              <span>// About</span>
+            </a>
+          </li>
+          <li>
+            <a class="dropdown-item" href="#">
+              <span>02.</span>
+              <span>// Experience</span>
+            </a>
+          </li>
+          <li>
+            <a class="dropdown-item" href="#">
+              <span>03.</span>
+              <span>// Work</span>
+            </a>
+          </li>
+          <li>
+            <a class="dropdown-item" href="#">
+              <span>04.</span>
+              <span>// Contact</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- content -->
+  
+<!-- section::home -->
+<section class="page-section page-section-home pt-4 position-relative overflow-hidden d-flex">
+  <div class="page-section-home-canvas-wrapper">
+    <canvas id="page-section-home-canvas"></canvas>
+  </div>
+  <div class="container py-4 px-4 mx-auto d-flex flex-column justify-content-center flex-1">
+    <div class="wrapper-with-tag">
+      <div class="container-with-tag">
+        <div class="mb-4">
+          <div class="text-primary font-mono">Hi, my name is</div>
+        </div>
+        <div class="display-4 fw-bolder mb-4">
+          <div class="text-custom-1">Alfian Dwi Nugraha.</div>
+          <div class="text-custom-2">A website engraver for artists.</div>
+        </div>
+        <div class="text-sm fw-light mb-4 w-50">
+          I am a web developer, who can handle web design, server side web, web games, and some desktop
+          programming. now focusing on the web front end.
+        </div>
+        <div class="mb-4 d-flex space-x-4 font-mono">
+          <button class="btn btn-primary">
+            <i class="bi-play-fill"></i>
+            <span>Lets Close About Me</span>
+          </button>
+          <button class="btn btn-dark">
+            <i class="bi-github"></i>
+            <span>Github</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<div class="social-media-bar position-fixed bottom-0 left-0 mx-4 d-flex flex-column space-y-2">
+  <a href="#" class="icon"><i class="bi-github"></i></a>
+  <a href="#" class="icon"><i class="bi-facebook"></i></a>
+  <a href="#" class="icon"><i class="bi-instagram"></i></a>
+</div>
+<div class="social-media-bar position-fixed bottom-0 right-0 mx-4 d-flex flex-column space-y-2">
+  <a href="#" class="text-vertical fw-lighter font-mono">viandwicyber@gmail.com</a>
+</div>
+
+
+  <!-- scripts -->
+  
 </body>
+
 </html>

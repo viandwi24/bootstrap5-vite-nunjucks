@@ -1,12 +1,44 @@
 {
-  "_main.1c99685a.js": {
-    "file": "assets/main.1c99685a.js",
+  "../node_modules/.pnpm/bootstrap-icons@1.9.1/node_modules/bootstrap-icons/font/fonts/bootstrap-icons.woff2": {
+    "file": "assets/bootstrap-icons.c69bf1cc.woff2",
+    "src": "../node_modules/.pnpm/bootstrap-icons@1.9.1/node_modules/bootstrap-icons/font/fonts/bootstrap-icons.woff2"
+  },
+  "../node_modules/.pnpm/bootstrap-icons@1.9.1/node_modules/bootstrap-icons/font/fonts/bootstrap-icons.woff": {
+    "file": "assets/bootstrap-icons.13977b4a.woff",
+    "src": "../node_modules/.pnpm/bootstrap-icons@1.9.1/node_modules/bootstrap-icons/font/fonts/bootstrap-icons.woff"
+  },
+  "_main.aa559a6b.js": {
+    "file": "assets/main.aa559a6b.js",
+    "dynamicImports": [
+      "../node_modules/.pnpm/@splinetool+runtime@0.9.123/node_modules/@splinetool/runtime/build/physics.js",
+      "../node_modules/.pnpm/@splinetool+runtime@0.9.123/node_modules/@splinetool/runtime/build/process.js",
+      "../node_modules/.pnpm/@splinetool+runtime@0.9.123/node_modules/@splinetool/runtime/build/boolean.js"
+    ],
     "css": [
-      "assets/main.05d03605.css"
+      "assets/main.30a15abf.css"
+    ],
+    "assets": [
+      "assets/bootstrap-icons.c69bf1cc.woff2",
+      "assets/bootstrap-icons.13977b4a.woff"
     ]
   },
+  "../node_modules/.pnpm/@splinetool+runtime@0.9.123/node_modules/@splinetool/runtime/build/physics.js": {
+    "file": "assets/physics.7e974586.js",
+    "src": "../node_modules/.pnpm/@splinetool+runtime@0.9.123/node_modules/@splinetool/runtime/build/physics.js",
+    "isDynamicEntry": true
+  },
+  "../node_modules/.pnpm/@splinetool+runtime@0.9.123/node_modules/@splinetool/runtime/build/process.js": {
+    "file": "assets/process.6292a982.js",
+    "src": "../node_modules/.pnpm/@splinetool+runtime@0.9.123/node_modules/@splinetool/runtime/build/process.js",
+    "isDynamicEntry": true
+  },
+  "../node_modules/.pnpm/@splinetool+runtime@0.9.123/node_modules/@splinetool/runtime/build/boolean.js": {
+    "file": "assets/boolean.3a232a12.js",
+    "src": "../node_modules/.pnpm/@splinetool+runtime@0.9.123/node_modules/@splinetool/runtime/build/boolean.js",
+    "isDynamicEntry": true
+  },
   "main.css": {
-    "file": "assets/main.05d03605.css",
+    "file": "assets/main.30a15abf.css",
     "src": "main.css"
   }
 }
