@@ -7,6 +7,7 @@ import '../sass/main.scss'
 // pages
 // page::home
 import './pages/home'
+import './pages/about'
 
 
 // all pages
@@ -24,6 +25,8 @@ window.addEventListener('beforeunload', async (ev) => {
     loaderEL.classList.remove('hide')
     await new Promise((resolve) => setTimeout(resolve, 1000))
   }
-  event.preventDefault()
-  event.returnValue = ''
+  try {
+    ev.preventDefault()
+    ev.returnValue = ''
+  } catch (error) {}
 })

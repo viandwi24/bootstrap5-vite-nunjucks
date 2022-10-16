@@ -35,6 +35,23 @@ body {
 .space-y-2 > * + * {
   margin-top: 0.5rem;
 }
+.flex-col {
+  flex-direction: column;
+}
+@include media-breakpoint-up(md) {
+  .md\:space-x-4 > * + * {
+    margin-left: 1rem;
+  }
+  .md\:space-y-0 > * + * {
+    margin-top: 0rem;
+  }
+  .md\:flex-col {
+    flex-direction: column;
+  }
+  .md\:flex-row {
+    flex-direction: row;
+  }
+}
 
 // positions
 .right-0 {
@@ -50,6 +67,13 @@ body {
 }
 .text-custom-2 {
   color: var(--color-custom-2);
+}
+
+// widts
+@include media-breakpoint-up(md) {
+  .md\:w-50 {
+    width: 50%;
+  }
 }
 
 // custom navbar
@@ -79,10 +103,11 @@ body {
 
 //section
 .page-section {
-  padding-top: 60px !important;
+  padding-top: 82px !important;
   min-height: 100vh;
 }
 .page-section-home {
+  padding-top: 60px !important;
   padding-bottom: 120px;
   background: #081426;
 }
@@ -115,6 +140,16 @@ body {
     height: 2px;
     background: var(--color-primary);
   }
+
+  // &.page-section-header-right {
+  //   flex-direction: column-reverse;
+  //   align-items: flex-start;
+
+  //   &::after {
+  //     margin-right: 16px;
+  //     margin-left: 16px;
+  //   }
+  // }
 }
 
 
@@ -190,7 +225,8 @@ body {
   .container-with-tag {
     padding-left: 3rem;
     &::before {
-      content: "<h1>";
+      content: '<' var(--tag) '>';
+      // content: "<h1>";
       display: block;
       padding-bottom: 8px;
       margin-left: -2.6rem;
@@ -199,7 +235,8 @@ body {
       color: $gray-500;
     }
     &::after {
-      content: "</h1>";
+      content: '</' var(--tag) '>';
+      // content: "</h1>";
       display: block;
       padding-top: 16px;
       margin-left: -2.6rem;
@@ -239,6 +276,7 @@ body {
 
 // custom bar
 .social-media-bar {
+  display: none;
   a.icon {
     color: $text-muted;
     font-size: 20px;
@@ -271,7 +309,11 @@ body {
     margin-top: 10px;
   }
 }
-
+@include media-breakpoint-up(sm) {
+  .social-media-bar {
+    display: flex !important;
+  }
+}
 
 
 // pages
@@ -287,4 +329,32 @@ body {
   transform: translateY(-50%);
   width: 50vw;
   height: 70vh;
+}
+// page::about
+.mypic-wrapper {
+  transition: all 0.3s ease-in-out;
+  &::before {
+    transition: all 0.3s ease-in-out;
+    border-radius: 6px;
+    position: absolute;
+    display: block !important;
+    content: '';
+    width: 100%;
+    height: 100%;
+    border: 4px solid $primary;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    margin-left: 1.6rem;
+    margin-top: 1.6rem;
+  }
+
+  &:hover {
+    padding-top: 4px;
+    padding-left: 4px;
+    &::before {
+      margin-left: 1.2rem;
+      margin-top: 1.2rem;
+    }
+  }
 }

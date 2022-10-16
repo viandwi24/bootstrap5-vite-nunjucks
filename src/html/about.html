@@ -2,20 +2,51 @@
 
 {% block content %}
 <!-- section::about -->
-<section class="page-section">
-  <div class="container py-4 px-4 mx-auto">
-    <div class="page-section-header">
+<section class="page-section page-section-about">
+  <div class="container py-4 px-4 mx-auto md:w-50 mb-4">
+    <div class="page-section-header mb-4">
       <span>01.</span>
       <span>About Me</span>
     </div>
-    <div>
-      Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-      Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-      when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-      It has survived not only five centuries, but also the leap into electronic typesetting,
-      remaining essentially unchanged.It was popularised in the 1960s with the release of Letraset
-      sheets containing Lorem Ipsum passages, and more recently with desktop publishing software
-      like Aldus PageMaker including versions of Lorem Ipsum.
+    <div class="row">
+      <div class="col px-4">
+        <p>          
+          Hello, my name is <span class="text-primary">Alfian Dwi Nugraha</span>! I have a passion in
+          the internet world since I was 10 years old. I was browsing blogs
+          and then trying to make some desktop applications, then again
+          met this web-based programming.
+        </p>
+        <ul>
+          <li>🔭 I’m currently working on Freelance as <span class="text-primary">Web Dev Programmer</span></li>
+          <li>🌱 I’m currently learning Golang and Python</li>
+          <li>🎓 I’m currently studying at the <span class="text-primary">Surabaya State University</span></li>
+        </ul>
+      </div>
+      <div class="col-4 px-4">
+        <div class="position-relative mypic-wrapper">
+          <img src="/mypic.jpg" alt="My Avatar" class="d-block img-fluid rounded mypic">
+        </div>
+      </div>
+      <!-- <img src="https://avatars.githubusercontent.com/u/41994283?s=400&u=0e8f0bce9bc6b0edd4c43c329c8f04945d55baaa&v=4" alt="My Avatar" height="256px"> -->
+    </div>
+  </div>
+  <div class="container py-4 px-4 mx-auto md:w-50 my-4">
+    <div class="row">
+      <div class="col">
+        <div class="page-section-header mb-4">
+          <span>My Avatar</span>
+        </div>
+        <div>
+          <p>
+            The <span class="text-primary">avatars</span> that I use on almost a lot of social media, are taken from some anime characters that I like.
+            In the form of <span class="text-primary">Shiroe</span> (Log Horizon), <span class="text-primary">Killua</span> (Hunter x Hunter), 
+            and <span class="text-primary">Kirito</span> (Sword Art online).
+          </p>
+        </div>
+      </div>
+      <div class="col page-section-about-canvas-wrapper h-50">
+        <canvas id="page-section-about-canvas"></canvas>
+      </div>
     </div>
   </div>
 </section>
