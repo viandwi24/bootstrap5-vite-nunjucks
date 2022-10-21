@@ -1,6 +1,7 @@
 import path from 'path'
 import fs from 'fs'
 import nunjucks from 'vite-plugin-nunjucks'
+import { ViteEjsPlugin } from 'vite-plugin-ejs'
 
 const mappingAllHtmlFiles = (parentDir = '', prefix = '') => {
   // read all files in the directory and subdirectories

@@ -10,15 +10,26 @@ if (canvas) {
     const onResize = () => {
         const screenWidth = window.innerWidth
         const wrapper = canvas.parentElement
-        if (wrapper) {
-            canvas.width = wrapper.clientWidth
-            canvas.height = wrapper.clientHeight
-        }
+        // wrapper.style.backgroundColor = '#000'
+
+        // update size
+        // if (wrapper) {
+        //     canvas.width = wrapper.clientWidth
+        //     canvas.height = wrapper.clientHeight
+        // }
+
+        // update
         if (screenWidth < 836) {
             app.canvas.style.display = 'none'
         } else {
             app.canvas.style.display = 'block'
         }
+
+        // app.setSize(canvas.width, canvas.height)
+        // app.emitEvent('resize')
     }
     window.addEventListener('resize', onResize)
+    window.addEventListener('DOMContentLoaded', () => {
+        onResize()
+    })
 }
