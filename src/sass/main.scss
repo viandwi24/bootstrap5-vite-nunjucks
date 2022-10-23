@@ -479,11 +479,31 @@ ul.list-custom {
   }
 }
 // page::experience
-.img-muted-hover-active {
-  filter: grayscale(50%);
+.project-item {
+  border: 1px solid transparent;
   transition: all 0.3s ease-in-out;
+  overflow: hidden;
+  .img-muted-hover-active {
+    filter: grayscale(100%);
+    transition: all 0.3s ease-in-out;
+  }
+  .project-item-description {
+    transition: all 0.3s ease-in-out;
+  }
   &:hover {
-    filter: grayscale(0%);
+    border: 1px solid $primary;
+    padding: 10px;
+    border-radius: 4px;
+    .img-muted-hover-active {
+      filter: grayscale(0%);
+    }
+    .project-item-description.right {
+      // transform: translateX(50px);
+    }
+    .project-item-description.left {
+      // transform: translateX(-50px);
+      // padding-left: -100px;
+    }
   }
 }
 // page::contact

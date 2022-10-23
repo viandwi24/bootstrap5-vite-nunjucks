@@ -11,11 +11,12 @@ import './pages/about'
 
 
 // all pages
+const loaderTime = 2000
 window.addEventListener('DOMContentLoaded', () => {
   // disable loader
   const loaderEL = document.querySelector('.loader-wrapper')
   if (loaderEL) {
-    setTimeout(() => loaderEL.classList.add('hide'), 500)
+    setTimeout(() => loaderEL.classList.add('hide'), loaderTime)
   }
 })
 window.addEventListener('beforeunload', async (ev) => {
@@ -23,7 +24,7 @@ window.addEventListener('beforeunload', async (ev) => {
   const loaderEL = document.querySelector('.loader-wrapper')
   if (loaderEL) {
     loaderEL.classList.remove('hide')
-    await new Promise((resolve) => setTimeout(resolve, 500))
+    await new Promise((resolve) => setTimeout(resolve, loaderTime))
   }
   try {
     ev.preventDefault()
